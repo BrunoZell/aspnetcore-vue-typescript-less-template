@@ -1,0 +1,17 @@
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
+
+namespace Template.Web.ServerApp.Main {
+    public class MainController : Controller {
+        [HttpGet("/", Name = Routes.Index)]
+        public IActionResult Index() {
+            return View();
+        }
+
+        [HttpGet("error", Name = Routes.Error)]
+        public IActionResult Error() {
+            ViewData["RequestId"] = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+            return View();
+        }
+    }
+}

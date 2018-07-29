@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "baseUrl": "./ClientApp", // Resolve modules relative to client app root
+    "target": "es2017",
+    "sourceMap": true,
+    "skipDefaultLibCheck": true,
+    "strict": false
+  },
+  "include": [
+    "./ClientApp/**/*"
+  ]
+}

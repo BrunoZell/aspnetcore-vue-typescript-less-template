@@ -8,7 +8,7 @@
     "target": "es2017",
     "sourceMap": true,
     "skipDefaultLibCheck": true,
-    "strict": false
+    "noImplicitAny": true
   },
   "include": [
     "./ClientApp/**/*"

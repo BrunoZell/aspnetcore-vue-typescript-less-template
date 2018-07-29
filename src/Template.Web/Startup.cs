@@ -29,7 +29,7 @@ namespace Template.Web {
                 });
             }
             else {
-                app.UseExceptionHandler("/Main/Error");
+                app.UseExceptionHandler("/error");
             }
 
             app.UseStaticFiles();

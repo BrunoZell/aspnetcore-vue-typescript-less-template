@@ -4,7 +4,7 @@ const path = require("path");
 
 module.exports = {
     entry: {
-        "main": "./ClientApp/boot.ts"
+        "main": ["babel-polyfill", "./ClientApp/boot.ts"]
     },
     output: {
         path: path.join(__dirname, "./wwwroot/dist"),
@@ -26,7 +26,7 @@ module.exports = {
             {
                 test: /\.ts$/,
                 include: /ClientApp/,
-                use: ["babel-loader", "awesome-typescript-loader"]
+                use: ["babel-loader", "awesome-typescript-loader?silent=true"]
             },
             {
                 test: /\.less$/,

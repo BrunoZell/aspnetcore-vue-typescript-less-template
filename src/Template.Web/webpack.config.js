@@ -26,7 +26,7 @@ module.exports = {
             {
                 test: /\.ts$/,
                 include: /ClientApp/,
-                loader: "awesome-typescript-loader"
+                use: ["babel-loader", "awesome-typescript-loader"]
             },
             {
                 test: /\.less$/,

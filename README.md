@@ -10,7 +10,7 @@ SPA project template for ASP.Net-Core with Vue.js, TypeScript, Less, Webpack inc
 - [x] [Less](http://lesscss.org/) stylesheets
 - [x] [Babel](https://babeljs.io/) transpilation to es5
 - [x] [Vuex](https://vuex.vuejs.org/) as state management
+- [x] [Vuetify](https://vuetifyjs.com/) as frontend ui library
 - [ ] Separate vendor script bundle
-- [ ] [Vuetify](https://vuetifyjs.com/) as frontend ui library
 - [ ] [Docker](https://www.docker.com/) support
 - [ ] [Let's Encrypt](https://letsencrypt.org/) SSL certificates with Nginx as reverse proxy

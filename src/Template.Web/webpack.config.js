@@ -3,6 +3,7 @@ const { TsConfigPathsPlugin } = require("awesome-typescript-loader");
 const path = require("path");
 
 module.exports = {
+    // development mode will get overwritten when invoked via commandline when publishing the application
     mode: "development",
     entry: {
         main: [

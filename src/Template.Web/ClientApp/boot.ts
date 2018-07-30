@@ -10,7 +10,7 @@ Store()
             el: "#app-root",
             store: store,
             router: Router,
-            render: h => h(require("./components/app/app.vue.html"))
+            render: h => h(require("./components/app/app.vue.html").default)
         });
     })
     .catch(error => {

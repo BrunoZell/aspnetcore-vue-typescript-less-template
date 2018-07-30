@@ -33,9 +33,9 @@ module.exports = {
                 include: /ClientApp/,
                 use: ["style-loader", "css-loader", "less-loader"]
             }
-        ],
+        ]
     },
     plugins: [
         new VueLoaderPlugin()
-    ],
+    ]
 };

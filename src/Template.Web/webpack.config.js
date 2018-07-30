@@ -8,8 +8,8 @@ module.exports = {
     entry: {
         main: [
             "babel-polyfill",
-            "vue",
-            "vue-router",
+            "vuetify/dist/vuetify.min.css",
+            "material-design-icons-iconfont/dist/material-design-icons.css",
             "./ClientApp/boot.ts"
         ],
     },
@@ -39,6 +39,14 @@ module.exports = {
                 test: /\.less$/,
                 include: /ClientApp/,
                 use: ["style-loader", "css-loader", "less-loader"]
+            },
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"]
+            },
+            {
+                test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+                loader: "url-loader?limit=100000"
             }
         ]
     },

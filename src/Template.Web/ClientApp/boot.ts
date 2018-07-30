@@ -1,6 +1,8 @@
 import Router from "router";
 import Store from "store";
 import Vue from "vue";
+import Vuetify from "vuetify";
+Vue.use(Vuetify)
 
 Store()
     .then(store => {

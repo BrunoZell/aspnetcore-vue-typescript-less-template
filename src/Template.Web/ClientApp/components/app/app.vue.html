@@ -1,14 +1,33 @@
 <template>
   <div id="app-root">
     <v-app>
-      <v-navigation-drawer app></v-navigation-drawer>
-      <v-toolbar app></v-toolbar>
+      <v-navigation-drawer fixed app v-model="menuOpen" :clipped="$vuetify.breakpoint.mdAndUp">
+        <v-list dense>
+          <template v-for="item in menuItems">
+            <v-list-tile v-on:click="" :key="item.text">
+              <v-list-tile-action>
+                <v-icon>{{ item.icon }}</v-icon>
+              </v-list-tile-action>
+              <v-list-tile-content>
+                <v-list-tile-title>
+                  {{ item.text }}
+                </v-list-tile-title>
+              </v-list-tile-content>
+            </v-list-tile>
+          </template>
+        </v-list>
+      </v-navigation-drawer>
+
+      <v-toolbar color="blue darken-3" dark fixed app :clipped-left="$vuetify.breakpoint.mdAndUp">
+        <v-toolbar-title>
+          <v-toolbar-side-icon v-on:click.stop="menuOpen = !menuOpen"></v-toolbar-side-icon>
+          <span>Template</span>
+        </v-toolbar-title>
+      </v-toolbar>
+
       <v-content>
-        <v-container fluid>
-          <router-view></router-view>
-        </v-container>
+        <router-view></router-view>
       </v-content>
-      <v-footer app></v-footer>
     </v-app>
   </div>
 </template>

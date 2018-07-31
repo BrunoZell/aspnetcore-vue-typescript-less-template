@@ -12,6 +12,6 @@ SPA project template for ASP.Net-Core with Vue.js, TypeScript, Less, Webpack inc
 - [x] [Vuex](https://vuex.vuejs.org/) as state management
 - [x] [Vuetify](https://vuetifyjs.com/) as frontend ui library
 - [x] [Feature folder](https://github.com/OdeToCode/AddFeatureFolders) for tight backend design
+- [x] [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) support
 - [ ] Separate vendor script bundle
-- [ ] [Docker](https://www.docker.com/) support
 - [ ] [Let's Encrypt](https://letsencrypt.org/) SSL certificates with Nginx as reverse proxy

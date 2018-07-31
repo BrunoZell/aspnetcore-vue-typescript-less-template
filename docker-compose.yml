@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  template.web:
+    image: "templateweb"
+    ports:
+      - "5000:80"
+    build:
+      context: "src/Template.Web"
+      dockerfile: "Dockerfile"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Production"

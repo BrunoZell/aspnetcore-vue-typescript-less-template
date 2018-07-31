@@ -1,4 +1,4 @@
-// Todo: Get auto generated routes from server
+﻿// Todo: Get auto generated routes from server
 export default <UrlCollection>{
     main: {
         index: "/",

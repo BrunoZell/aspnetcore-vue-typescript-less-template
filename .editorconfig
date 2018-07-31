@@ -1,11 +1,11 @@
-# Top-most EditorConfig file
+﻿# Top-most EditorConfig file
 root = true
 
 # Global settings
 [*]
 indent_style = space
 insert_final_newline = true
-charset = utf-8
+charset = utf-8-bom
 end_of_line = crlf
 # (Please don't specify an indent_size here; that has too many unintended consequences.)
 
@@ -21,6 +21,10 @@ indent_size = 2
 [*.{props,targets,ruleset,config,nuspec,resx,vsixmanifest,vsct}]
 indent_size = 2
 
+# Yml config files
+[*.yml]
+indent_size = 2
+
 # JSON files
 [*.json]
 indent_size = 2
@@ -29,7 +33,11 @@ indent_size = 2
 [*.{html,cshtml}]
 indent_size = 2
 
-# Dotnet code style settings:
+# Remove BOM for some files
+[{package.json,docker-*.yml,Dockerfile}]
+charset = utf-8
+
+# Dotnet code style settings
 [*.{cs,vb}]
 # Sort using and Import directives with System.* appearing first
 dotnet_sort_system_directives_first = false
@@ -50,7 +58,7 @@ dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 
-# CSharp code style settings:
+# CSharp code style settings
 [*.cs]
 # Prefer "var" everywhere
 csharp_style_var_for_built_in_types = false:suggestion

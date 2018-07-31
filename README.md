@@ -1,4 +1,4 @@
-# Modern SPA template with Vue.js and ASP.Net-Core backend
+﻿# Modern SPA template with Vue.js and ASP.Net-Core backend
 SPA project template for ASP.Net-Core with Vue.js, TypeScript, Less, Webpack incl HMR (hot module replacement)
 
 **WIP**

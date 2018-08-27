@@ -4,9 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace Template.Web.ServerApp.Main {
     public class MainController : Controller {
         [HttpGet("/", Name = Routes.Index)]
-        public IActionResult Index() {
-            return View();
-        }
+        public IActionResult Index()
+            => View();
 
         [HttpGet("error", Name = Routes.Error)]
         public IActionResult Error() {

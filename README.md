@@ -13,8 +13,8 @@ SPA project template for ASP.Net-Core with Vue.js, TypeScript, Less, Webpack inc
 - [x] [Vuetify](https://vuetifyjs.com/) as frontend ui library
 - [x] [Feature folder](https://github.com/OdeToCode/AddFeatureFolders) for tight backend design
 - [x] [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) support
+- [x] Generic [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options) with naming rules
 - [ ] TypeScript debugging in Visual Studio
 - [ ] [Let's Encrypt](https://letsencrypt.org/) SSL certificates with Nginx as reverse proxy
-- [ ] Generic [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options) with naming rules
 - [ ] Separate vendor script bundle
 - [ ] JWT token authorization

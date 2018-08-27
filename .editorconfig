@@ -66,7 +66,7 @@ insert_final_newline = false
 insert_final_newline = false
 
 # Remove BOM for some files
-[{package.json,docker-*.yml,Dockerfile}]
+[{package.json,package-lock.json,docker-*.yml,Dockerfile}]
 charset = utf-8
 
 ###########################

@@ -2,12 +2,12 @@
 const { TsConfigPathsPlugin } = require("awesome-typescript-loader");
 const path = require("path");
 
-module.exports = (env, argv) => {
-    const isDevBuild = (argv && argv.mode === "development");
+module.exports = env => {
+    const isDevBuild = !(env && env.production);
+    console.log("Webpack environment: " + (isDevBuild ? "development" : "production"));
 
     return {
-        // development mode will get overwritten when invoked via commandline when publishing the application
-        mode: "development",
+        mode: isDevBuild ? "development" : "production",
         devtool: isDevBuild ? "inline-source-map" : "none",
         entry: {
             main: [

@@ -4,10 +4,11 @@ const path = require("path");
 
 module.exports = env => {
     const isDevBuild = !(env && env.production);
-    console.log("Webpack environment: " + (isDevBuild ? "development" : "production"));
+    const mode = isDevBuild ? "development" : "production";
+    console.log("Webpack mode: " + mode);
 
     return {
-        mode: isDevBuild ? "development" : "production",
+        mode,
         devtool: isDevBuild ? "inline-source-map" : "none",
         entry: {
             main: [

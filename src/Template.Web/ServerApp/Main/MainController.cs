@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Template.Web.ServerApp.Main {
     public class MainController : Controller {
-        [HttpGet("/", Name = Routes.Index)]
+        [HttpGet("{*url}", Name = Routes.Index)]
         public IActionResult Index()
             => View();
 

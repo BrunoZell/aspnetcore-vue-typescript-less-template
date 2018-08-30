@@ -33,9 +33,7 @@ namespace Template.Web {
             }
 
             app.UseStaticFiles();
-            app.UseMvc(routes => {
-                routes.MapSpaFallbackRoute("spa-fallback", new { controller = "Main", action = "Index" });
-            });
+            app.UseMvc();
         }
     }
 }

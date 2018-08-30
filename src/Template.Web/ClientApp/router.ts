@@ -1,4 +1,5 @@
-﻿import Vue from "vue";
+﻿import Components from "components";
+import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 Vue.use(VueRouter);
 
@@ -6,7 +7,7 @@ const routes = <RouteConfig[]>[
     {
         name: "home",
         path: "/",
-        component: require("components/home/home.vue.html").default
+        component: Components.home
     }
 ];
 

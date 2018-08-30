@@ -1,4 +1,5 @@
-﻿import Router from "router";
+﻿import Components from "components";
+import Router from "router";
 import Store from "store";
 import Vue from "vue";
 import Vuetify from "vuetify";
@@ -12,7 +13,7 @@ Store()
             el: "#app-root",
             store: store,
             router: Router,
-            render: h => h(require("components/app/app.vue.html").default)
+            render: (h: any) => h(Components.app)
         });
     })
     .catch(error => {

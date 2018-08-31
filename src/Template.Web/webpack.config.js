@@ -21,7 +21,7 @@ module.exports = env => {
         output: {
             path: path.join(__dirname, "./wwwroot/dist"),
             filename: "[name].js",
-            publicPath: "dist/"
+            publicPath: "/dist/"
         },
         resolve: {
             // Makes sure the paths set in tsconfig will load (baseurl)

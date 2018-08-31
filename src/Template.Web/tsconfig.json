@@ -1,5 +1,6 @@
 ﻿{
   "compilerOptions": {
+    "allowJs": true, // Remove compiler errors about experimental decorators
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "module": "es2015",

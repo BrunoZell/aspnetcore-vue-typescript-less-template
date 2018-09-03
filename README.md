@@ -1,5 +1,5 @@
 ﻿# Modern SPA template with Vue.js and ASP.Net-Core backend
-SPA project template for ASP.Net-Core with Vue.js, TypeScript, Less, Webpack incl HMR (hot module replacement)
+SPA project template for ASP.Net-Core with Vue.js, TypeScript, Less, Webpack 4 and Hot Module Replacement
 
 **WIP**
 - [x] [ASP.Net-Core](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.1) 2.1 server
@@ -15,7 +15,6 @@ SPA project template for ASP.Net-Core with Vue.js, TypeScript, Less, Webpack inc
 - [x] [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) support
 - [x] Generic [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options) with naming rules
 - [x] Source map generation in dev builds for script debugging
-- [ ] [Let's Encrypt](https://letsencrypt.org/) SSL certificates
-- [ ] [Nginx](http://nginx.org/) as reverse proxy
 - [ ] Separate vendor script bundle
+- [ ] Automated tests (UI, Integraion)
 - [ ] JWT token authorization

@@ -16,5 +16,6 @@ SPA project template for ASP.Net-Core with Vue.js, TypeScript, Less, Webpack 4 a
 - [x] Generic [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options) with naming rules
 - [x] Source map generation in dev builds for script debugging
 - [ ] Separate vendor script bundle
+- [ ] Generate client side apis with TypeWriter templates
 - [ ] Automated tests (UI, Integraion)
 - [ ] JWT token authorization

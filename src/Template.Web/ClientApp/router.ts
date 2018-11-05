@@ -7,7 +7,7 @@ const routes = <RouteConfig[]>[
     {
         name: "home",
         path: "/",
-        component: Components.home
+        component: Components.pages.home
     }
 ];
 

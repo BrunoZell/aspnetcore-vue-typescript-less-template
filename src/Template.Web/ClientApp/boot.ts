@@ -13,7 +13,7 @@ Store()
             el: "#app-root",
             store: store,
             router: Router,
-            render: (h: any) => h(Components.app)
+            render: (h: any) => h(Components.layout.app)
         });
     })
     .catch(error => {

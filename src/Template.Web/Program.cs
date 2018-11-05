@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Template.Web {
-    public class Program {
+namespace Template.Web
+{
+    public class Program
+    {
         public static void Main(string[] args)
             => CreateWebHostBuilder(args)
                 .Build()

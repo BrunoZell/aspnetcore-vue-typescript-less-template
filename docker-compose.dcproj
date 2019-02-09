@@ -9,6 +9,9 @@
     <DockerServiceName>template.web</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
+    <None Include=".dockerignore" />
     <None Include="docker-compose.yml" />
+    <None Include="proxy.dockerfile" />
+    <None Include="webui.nginx.conf" />
   </ItemGroup>
 </Project>

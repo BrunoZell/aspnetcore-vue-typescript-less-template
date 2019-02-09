@@ -1,12 +1,25 @@
 version: '3.4'
 
 services:
-  template.web:
-    image: "templateweb"
-    ports:
-      - "5000:80"
+  proxy:
     build:
-      context: "src/Template.Web"
-      dockerfile: "Dockerfile"
+      context: .
+      dockerfile: proxy.dockerfile
+    environment:
+      CERTBOT_EMAIL: "youremail@example.com"
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - webui
+
+  webui:
+    build:
+      context: src/
+      dockerfile: Template.Web/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: "Production"
+    restart: always
+    expose:
+      - "80"

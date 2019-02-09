@@ -13,6 +13,8 @@ This repository acts as a starting point for a new single page web application.
 - [Vuetify](https://vuetifyjs.com/) as frontend UI library
 - [Feature folder](https://github.com/OdeToCode/AddFeatureFolders) for tight backend design
 - [Docker](https://www.docker.com/) support with a Dockerfile and Docker-Compose configuration
+- [Let's Encrypt](https://letsencrypt.org/) SSL registration automated
+- [Nginx](https://www.nginx.com/) as reverse proxy in production
 - Generic [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options) with naming rules
 
 ## Left Todo

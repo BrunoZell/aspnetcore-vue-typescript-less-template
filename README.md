@@ -1,4 +1,5 @@
 ﻿# Modern SPA template with Vue.js and ASP.Net-Core backend
+
 This repository acts as a starting point for a new single page web application.
 
 ## Fully Configured Features

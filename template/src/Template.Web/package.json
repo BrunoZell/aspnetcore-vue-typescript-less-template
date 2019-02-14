@@ -1,7 +1,9 @@
 {
-  "name": "template",
-  "private": true,
+  "name": "{{ name }}",
+  "description": "{{ description }}",
   "version": "1.0.0",
+  "author": "{{ author }}",
+  "private": true,
   "devDependencies": {
     "@types/webpack-env": "^1.13.6",
     "aspnet-webpack": "^3.0.0",

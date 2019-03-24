@@ -10,7 +10,7 @@ FROM dotnet-node-env AS build-env
 # Copy everything and build (we assume the build context is the /src folder here).
 # This build includes an npm install and Webpack production build (Specified in .csproj).
 COPY . /app
-RUN dotnet publish /app/Template.Web/Template.Web.csproj -c Release -o /out
+RUN dotnet publish /app/{{ name }}.Web/{{ name }}.Web.csproj -c Release -o /out
 
 # Todo: Do restore and publish in distinct layers
 
@@ -18,4 +18,4 @@ RUN dotnet publish /app/Template.Web/Template.Web.csproj -c Release -o /out
 FROM microsoft/dotnet:aspnetcore-runtime
 WORKDIR /app
 COPY --from=build-env /out .
-ENTRYPOINT ["dotnet", "Template.Web.dll"]
+ENTRYPOINT ["dotnet", "{{ name }}.Web.dll"]

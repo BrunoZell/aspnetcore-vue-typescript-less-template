@@ -14,6 +14,16 @@
     "author": {
       "type": "string",
       "label": "Author"
+    },
+    "url": {
+      "type": "string",
+      "label": "Url",
+      "default": "example.com"
+    },
+    "certbot_email": {
+      "type": "string",
+      "label": "Certbot email",
+      "default": "email@example.com"
     }
   },
   "completeMessage": "Enjoy your vuetiful project."

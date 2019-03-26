@@ -13,7 +13,7 @@
     "language": "C#",
     "type": "project"
   },
-  "sourceName": "Template",
+  "sourceName": "VueTemplate",
   "preferNameDirectory": true,
   "symbols": {
     "description": {

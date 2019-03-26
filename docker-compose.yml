@@ -17,7 +17,7 @@ services:
   webui:
     build:
       context: src/
-      dockerfile: Template.Web/Dockerfile
+      dockerfile: VueTemplate.Web/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: "Production"
     restart: always

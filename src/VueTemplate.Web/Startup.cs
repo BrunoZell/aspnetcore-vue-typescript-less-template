@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OdeToCode.AddFeatureFolders;
 
-namespace Template.Web
+namespace VueTemplate.Web
 {
     public class Startup
     {

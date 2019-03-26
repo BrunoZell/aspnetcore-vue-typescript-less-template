@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Template.Web
+namespace VueTemplate.Web
 {
     public class Program
     {

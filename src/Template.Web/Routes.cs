@@ -1,4 +1,4 @@
-﻿namespace {{ name }}.Web
+﻿namespace Template.Web
 {
     public static class Routes
     {

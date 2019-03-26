@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: proxy.dockerfile
     environment:
-      CERTBOT_EMAIL: "{{ certbot_email }}"
+      CERTBOT_EMAIL: "certbot@email.com"
     restart: always
     ports:
       - "80:80"
@@ -17,7 +17,7 @@ services:
   webui:
     build:
       context: src/
-      dockerfile: {{ name }}.Web/Dockerfile
+      dockerfile: Template.Web/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: "Production"
     restart: always

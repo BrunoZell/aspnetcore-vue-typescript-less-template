@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OdeToCode.AddFeatureFolders;
 
-namespace {{ name }}.Web
+namespace Template.Web
 {
     public class Startup
     {

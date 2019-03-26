@@ -6,7 +6,7 @@
     <ProjectGuid>171e756b-5f3b-4a23-872b-bf601ceb6bea</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>http://localhost:{ServicePort}</DockerServiceUrl>
-    <DockerServiceName>{{ name }}.web</DockerServiceName>
+    <DockerServiceName>template.web</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include=".dockerignore" />

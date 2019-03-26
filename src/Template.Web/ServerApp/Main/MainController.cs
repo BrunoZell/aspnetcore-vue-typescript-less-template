@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace {{ name }}.Web.ServerApp.Main
+namespace Template.Web.ServerApp.Main
 {
     public class MainController : Controller
     {

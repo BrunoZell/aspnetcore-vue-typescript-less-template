@@ -1,8 +1,8 @@
 {
-  "name": "{{ name }}",
-  "description": "{{ description }}",
+  "name": "template",
+  "description": "project-description",
   "version": "1.0.0",
-  "author": "{{ author }}",
+  "author": "project-author",
   "private": true,
   "devDependencies": {
     "@types/webpack-env": "^1.13.6",

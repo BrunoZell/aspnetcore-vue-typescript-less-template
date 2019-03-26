@@ -16,24 +16,20 @@
   "sourceName": "VueTemplate",
   "preferNameDirectory": true,
   "symbols": {
-    "description": {
-      "type": "parameter",
-      "defaultValue": "A vuetiful project",
-      "replaces": "project-description"
-    },
     "author": {
       "type": "parameter",
+      "description": "Project author name for license.",
       "isRequired": true,
       "replaces": "project-author"
     },
     "certbotEmail": {
       "type": "parameter",
-      "isRequired": true,
+      "description": "This email address is used to request an Let's Encrypt SSL certificate.",
       "replaces": "certbot@example.com"
     },
     "publicUrl": {
       "type": "parameter",
-      "isRequired": true,
+      "description": "The Let's Encrypt SSL certificate will be requested for this domain.",
       "replaces": "public.url"
     },
     "currentYear": {

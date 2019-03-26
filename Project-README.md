@@ -1,3 +1,3 @@
 ﻿# Template
 
-project-description
+An ASP.Net-Core web app

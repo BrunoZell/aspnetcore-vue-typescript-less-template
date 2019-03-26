@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "global", "global", "{6958E6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B8E35FA3-A211-48CC-AE6D-C837D07D269A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "{{ name }}.Web", "src\{{ name }}.Web\{{ name }}.Web.csproj", "{01DCB34F-4E99-4355-9D61-6D51FD78ABD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Web", "src\Template.Web\Template.Web.csproj", "{01DCB34F-4E99-4355-9D61-6D51FD78ABD1}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{171E756B-7F3B-4A23-872B-BF601CEB6BEA}"
 EndProject

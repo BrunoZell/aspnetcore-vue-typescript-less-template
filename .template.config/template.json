@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Bruno Zell",
+  "classifications": [ "Web", "MVC", "SPA" ], 
+  "name": "ASP.Net Core with Vue.js, TypeScript and Less",
+  "identity": "MyProject.05.Sample.CSharp",         
+  "shortName": "vue-ts",
+  "tags": {
+    "language": "C#",
+    "type":"project"
+  },
+  "sourceName": "Template",
+  "preferNameDirectory": true,
+  "symbols":{
+    "description": {
+        "type": "parameter",
+        "defaultValue": "A vuetiful project",
+        "replaces":"project-description"
+    },
+    "author": {
+      "type": "parameter",
+      "isRequired": true,
+      "replaces": "project-author"
+    },
+    "certbot-email": {
+        "type": "parameter",
+        "isRequired": true,
+        "replaces":"certbot-email"
+    },
+    "public-url": {
+        "type": "parameter",
+        "isRequired": true,
+        "replaces":"public.url"
+    },
+    "current-year": {
+      "type": "generated",
+      "generator": "now",
+      "parameters": {
+        "format": "yyyy"
+      },
+      "replaces":"current-year"
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [ 
+            ".git/**", 
+            ".vs/**", 
+            "**/node_modules/**",
+            "README.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+    "symbolInfo": {
+        "author": {
+            "longName": "author",
+            "shortName": "me"
+        },
+        "description": {
+            "longName": "description",
+            "shortName": "d"
+        },
+        "certbotEmail": {
+            "longName": "certbot-email",
+            "shortName": "email"
+        },
+        "publicUrl": {
+            "longName": "public-url",
+            "shortName": "url"
+        }
+    }
+}

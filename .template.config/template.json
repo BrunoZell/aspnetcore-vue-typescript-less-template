@@ -26,17 +26,17 @@
       "isRequired": true,
       "replaces": "project-author"
     },
-    "certbot-email": {
+    "certbotEmail": {
       "type": "parameter",
       "isRequired": true,
       "replaces": "certbot@example.com"
     },
-    "public-url": {
+    "publicUrl": {
       "type": "parameter",
       "isRequired": true,
       "replaces": "public.url"
     },
-    "current-year": {
+    "currentYear": {
       "type": "generated",
       "generator": "now",
       "parameters": {

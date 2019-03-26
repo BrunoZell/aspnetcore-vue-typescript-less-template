@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: proxy.dockerfile
     environment:
-      CERTBOT_EMAIL: "certbot@email.com"
+      CERTBOT_EMAIL: "certbot@example.com"
     restart: always
     ports:
       - "80:80"

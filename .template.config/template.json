@@ -25,7 +25,7 @@
     "certbot-email": {
         "type": "parameter",
         "isRequired": true,
-        "replaces":"certbot-email"
+        "replaces":"certbot@example.com"
     },
     "public-url": {
         "type": "parameter",
@@ -49,8 +49,12 @@
             ".git/**", 
             ".vs/**", 
             "**/node_modules/**",
+            "**/wwwroot/**",
             "README.md"
-          ]
+          ],
+          "rename": {
+            "Project-README.md": "README.md"
+          }
         }
       ]
     }

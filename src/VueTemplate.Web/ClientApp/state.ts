@@ -1,5 +1,5 @@
-﻿import { UrlCollection } from "urls";
-
+﻿
 export default interface AppState {
-    urls: UrlCollection;
+    appVersion: string;
+    // Todo: Create SPA state structure here
 }

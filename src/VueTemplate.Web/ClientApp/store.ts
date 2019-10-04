@@ -1,19 +1,24 @@
-﻿import AppState from "state";
-import Urls from "urls";
+﻿import axios from "axios";
+import AppState from "state";
 import Vue from "vue";
-import Vuex from "vuex";
+import Vuex, { MutationTree } from "vuex";
+
 Vue.use(Vuex);
 
 export default async function () {
     // Initialize Vuex store while loading screen is still shown
     const state = await initializeState();
-    return new Vuex.Store({ state });
+    return new Vuex.Store({ state, mutations });
 };
 
 async function initializeState() {
-    // Todo: Make api calls or similar to initialize the SPA state
+    const version = await axios.post<{ version: string }>("/api/version");
 
     return <AppState>{
-        urls: Urls
+        appVersion: version.data.version,
     };
+}
+
+const mutations = <MutationTree<AppState>>{
+    // Todo: Add mutations
 }

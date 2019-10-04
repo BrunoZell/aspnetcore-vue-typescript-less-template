@@ -9,6 +9,12 @@ namespace VueTemplate.Web.ServerApp.Main
         public IActionResult Index()
             => View();
 
+        [HttpPost("api/version", Name = Routes.Version)]
+        public IActionResult Version() =>
+            Json(new {
+                Version = $"v{GetType().Assembly.GetName().Version?.ToString(3) ?? "0.0.0"}"
+            });
+
         [HttpGet("error", Name = Routes.Error)]
         public IActionResult Error()
         {

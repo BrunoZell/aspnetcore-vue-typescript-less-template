@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using System.IO;
 
 namespace VueTemplate.Web
 {
@@ -15,6 +16,7 @@ namespace VueTemplate.Web
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             new HostBuilder()
                 .ConfigureWebHost(web => {
+                    web.UseContentRoot(Directory.GetCurrentDirectory());
                     web.UseKestrel();
                     web.UseStartup<Startup>();
                 })

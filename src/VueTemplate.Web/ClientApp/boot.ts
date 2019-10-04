@@ -1,9 +1,8 @@
-﻿import Components from "components";
-import Router from "router";
+﻿import components from "components";
+import router from "router";
 import Store from "store";
+import vuetify from "theme";
 import Vue from "vue";
-import Vuetify from "vuetify";
-Vue.use(Vuetify)
 
 Store()
     .then(store => {
@@ -11,14 +10,15 @@ Store()
         // Now initialize Vue and exit loading screen
         new Vue({
             el: "#app-root",
-            store: store,
-            router: Router,
-            render: (h: any) => h(Components.layout.app)
+            vuetify,
+            store,
+            router,
+            render: (h: any) => h(components.layout.app)
         });
     })
     .catch(error => {
         // Error while initializing store.
         // Todo: render new Vue with error page
-        console.log("Site can't be initialized. Show error page.");
-        console.log(error);
+        console.error("Site can't be initialized. Show error page.");
+        console.error(error);
     });

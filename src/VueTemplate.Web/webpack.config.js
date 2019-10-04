@@ -14,9 +14,9 @@ module.exports = env => {
             main: [
                 "babel-polyfill",
                 "vuetify/dist/vuetify.min.css",
-                "material-design-icons-iconfont/dist/material-design-icons.css",
+                "@mdi/font/css/materialdesignicons.min.css",
                 "./ClientApp/boot.ts"
-            ],
+            ]
         },
         output: {
             path: path.join(__dirname, "./wwwroot/dist"),

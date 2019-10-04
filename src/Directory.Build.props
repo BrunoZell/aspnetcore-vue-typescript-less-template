@@ -13,6 +13,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
+    <Authors>project-author</Authors>
     <Copyright>$(Company) $([System.DateTime]::Now.ToString(yyyy))</Copyright>
   </PropertyGroup>
 

@@ -16,7 +16,7 @@ services:
 
   webui:
     build:
-      context: src/
+      context: ../../src/
       dockerfile: VueTemplate.Web/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: "Production"

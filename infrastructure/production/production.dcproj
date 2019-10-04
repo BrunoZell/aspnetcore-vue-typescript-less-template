@@ -9,7 +9,6 @@
     <DockerServiceName>vuetemplate.web</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
-    <None Include=".dockerignore" />
     <None Include="docker-compose.yml" />
     <None Include="proxy\Dockerfile" />
     <None Include="proxy\webui.nginx.conf" />

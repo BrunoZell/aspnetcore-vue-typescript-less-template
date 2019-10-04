@@ -1,1 +1,3 @@
 ﻿/wwwroot/dist/**
+/ClientApp/**/*.js
+/ClientApp/**/*.map

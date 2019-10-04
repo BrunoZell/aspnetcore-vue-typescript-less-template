@@ -16,6 +16,7 @@ This repository acts as a starting point for a new single page web application.
 - [Docker](https://www.docker.com/) and [Docker-Compose](https://docs.docker.com/compose/) support incl. debugging
 - [Let's Encrypt](https://letsencrypt.org/) SSL registration automated
 - [Nginx](https://www.nginx.com/) as reverse proxy in production
+- Many default [Roslyn analyzers](https://docs.microsoft.com/en-us/visualstudio/extensibility/getting-started-with-roslyn-analyzers) with a solid ruleset
 - Generic [.editorconfig](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options) with naming rules
 - [.vsconfig](https://devblogs.microsoft.com/setup/configure-visual-studio-across-your-organization-with-vsconfig/) to discover required Visual Studio components
 

@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RuleSet Name="Solution Rules" Description="Rules for analyzers used in whole solution" ToolsVersion="16.0">
   <Include Path="allrules.ruleset" Action="Default" />
-  <Rules AnalyzerId="ClrHeapAllocationAnalyzer" RuleNamespace="ClrHeapAllocationAnalyzer">
-    <Rule Id="HAA0302" Action="None" />
-  </Rules>
   <Rules AnalyzerId="ErrorProne.Net.CoreAnalyzers" RuleNamespace="ErrorProne.Net.CoreAnalyzers">
     <Rule Id="EPC13" Action="None" />
     <Rule Id="ERP022" Action="None" />

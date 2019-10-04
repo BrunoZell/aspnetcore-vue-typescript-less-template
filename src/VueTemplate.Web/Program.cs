@@ -30,6 +30,7 @@ namespace VueTemplate.Web
                     config.AddCommandLine(args);
                 })
                 .ConfigureLogging((context, logging) => {
+                    logging.AddConfiguration(context.Configuration.GetSection("Logging"));
                     logging.AddDebug();
                     logging.AddConsole();
                 })

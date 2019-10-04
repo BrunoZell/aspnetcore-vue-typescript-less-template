@@ -9,9 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "global", "global", "{6958E6
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
 		.vsconfig = .vsconfig
+		analyzers.props = analyzers.props
+		src\Directory.Build.props = src\Directory.Build.props
 		global.json = global.json
 		LICENSE = LICENSE
 		README.md = README.md
+		VueTemplate.ruleset = VueTemplate.ruleset
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B8E35FA3-A211-48CC-AE6D-C837D07D269A}"

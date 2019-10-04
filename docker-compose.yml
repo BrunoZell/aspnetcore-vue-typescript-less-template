@@ -1,18 +1,18 @@
-version: '3.4'
+version: '3.7'
 
 services:
   proxy:
     build:
-      context: .
-      dockerfile: proxy.dockerfile
+      context: ./proxy/
+      dockerfile: Dockerfile
     environment:
       CERTBOT_EMAIL: "certbot@example.com"
+    volumes:
+      - letsencrypt:/etc/letsencrypt/live
     restart: always
     ports:
       - "80:80"
       - "443:443"
-    depends_on:
-      - webui
 
   webui:
     build:
@@ -23,3 +23,6 @@ services:
     restart: always
     expose:
       - "80"
+
+volumes:
+  letsencrypt:

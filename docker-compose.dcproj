@@ -11,7 +11,7 @@
   <ItemGroup>
     <None Include=".dockerignore" />
     <None Include="docker-compose.yml" />
-    <None Include="proxy.dockerfile" />
-    <None Include="webui.nginx.conf" />
+    <None Include="proxy\Dockerfile" />
+    <None Include="proxy\webui.nginx.conf" />
   </ItemGroup>
 </Project>

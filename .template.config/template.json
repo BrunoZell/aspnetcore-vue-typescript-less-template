@@ -7,7 +7,7 @@
     "SPA"
   ],
   "name": "ASP.Net Core with Vue.js, TypeScript and Less",
-  "identity": "MyProject.05.Sample.CSharp",
+  "identity": "BrunoZell.VueSpa",
   "shortName": "vue-ts",
   "tags": {
     "language": "C#",
@@ -44,15 +44,15 @@
   "sources": [
     {
       "exclude": [
-        ".template.config/**/*", 
+        ".template.config/**/*",
         ".git/**",
         ".vs/**",
         "**/[Bb]in/**",
-        "**/[Oo]bj/**", 
-        "**/*.filelist", 
+        "**/[Oo]bj/**",
+        "**/*.filelist",
         "**/node_modules/**",
         "**/wwwroot/**",
-        "**/*.user", 
+        "**/*.user",
         "**/*.lock.json",
         "README.md"
       ],

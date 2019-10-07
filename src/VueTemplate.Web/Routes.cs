@@ -1,4 +1,4 @@
-﻿namespace VueTemplate.Web
+namespace VueTemplate.Web
 {
     public static class Routes
     {

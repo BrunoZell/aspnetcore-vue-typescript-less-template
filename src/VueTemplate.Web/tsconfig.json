@@ -1,4 +1,4 @@
-﻿{
+{
   "compilerOptions": {
     "baseUrl": "./ClientApp", // Resolve modules relative to client app root
     "target": "es2017",

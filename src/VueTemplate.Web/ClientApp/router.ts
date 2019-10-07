@@ -1,4 +1,4 @@
-﻿import Components from "components";
+import Components from "components";
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 

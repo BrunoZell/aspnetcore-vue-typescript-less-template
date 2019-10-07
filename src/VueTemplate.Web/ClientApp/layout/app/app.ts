@@ -1,4 +1,4 @@
-﻿import Vue from "vue";
+import Vue from "vue";
 import { Component } from "vue-property-decorator";
 import { State } from "vuex-class";
 

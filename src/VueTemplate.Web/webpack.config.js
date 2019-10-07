@@ -1,4 +1,4 @@
-﻿const { VueLoaderPlugin } = require("vue-loader");
+const { VueLoaderPlugin } = require("vue-loader");
 const { TsConfigPathsPlugin } = require("awesome-typescript-loader");
 const path = require("path");
 

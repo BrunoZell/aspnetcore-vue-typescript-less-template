@@ -1,4 +1,4 @@
-﻿import components from "components";
+import components from "components";
 import router from "router";
 import Store from "store";
 import vuetify from "theme";

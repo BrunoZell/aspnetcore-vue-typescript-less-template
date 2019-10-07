@@ -1,4 +1,4 @@
-﻿import axios from "axios";
+import axios from "axios";
 import AppState from "state";
 import Vue from "vue";
 import Vuex, { MutationTree } from "vuex";
